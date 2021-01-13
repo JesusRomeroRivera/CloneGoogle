@@ -1,0 +1,35 @@
+.header{
+    width: 100%;
+    height: 7.8vh;
+    display: flex;
+    justify-content: flex-end;
+    font-family: @font-principal;
+    .header-container{
+        display: flex;
+        width: 183px;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 29px;
+        a{
+            font-size: 1.3rem;
+            color: black;
+        }
+        .icon-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            color: #777777;
+            &:hover{
+                color: black;
+                cursor: pointer;
+            }
+            .icon-stop2{
+                font-size: 5.5px;
+                margin: 0.5px;
+            }
+        }
+        img{
+            border-radius: 20px;
+        }
+    }
+}
